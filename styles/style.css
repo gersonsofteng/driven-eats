@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEEEEE;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Header */
+
+.header {
+    height: 92px;
+    width: 100%;
+    background-color: #CF2B2B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+.header h1 {
+    font-family: "Righteous", sans-serif;
+    font-size: 44px;
+    color: #FFFFFF;
+}
+.header p {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+/* Container */
+.conteudo {
+    width: 100%;
+    padding: 90px 0 110px 0;
+}
+.categoria {
+    margin-top: 28px;
+    margin-left: 20px;
+}
+.categoria h2 {
+    font-size: 26px;
+    font-family: "Righteous", sans-serif;
+    color: #333333;
+    margin-bottom: 17px;
+}
+.opcoes {
+    display: flex;
+    gap: 16px;
+    padding-right: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.opcao {
+    background-color: #FFFFFF;
+    width: 172px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 9px;
+    padding: 18px 14px;
+    box-shadow: 2px 2px 10px -4px rgba(0, 0, 0, 0.1);
+}
+.opcao img {
+    max-height: 87px;
+    margin-bottom: 7px;
+}
+.opcao h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+.descricao {
+    font-size: 16px;
+    font-weight: 300;
+    color: #A6A6A6;
+}
+.preco {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Footer */
+
+.footer {
+    height: 92px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+button {
+    all: unset;
+}
+.footer button {
+    background-color: #CBCBCB;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 110%;
+    color: #FFFFFF;
+    width: 100%;
+    height: 62px;
+    border-radius: 31px;
+}
