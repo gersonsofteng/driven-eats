@@ -56,17 +56,26 @@ body {
 }
 .opcao {
     background-color: #FFFFFF;
-    width: 172px;
+    min-width: 172px;
     display: flex;
     flex-direction: column;
     gap: 5px;
     border-radius: 9px;
     padding: 18px 14px;
     box-shadow: 2px 2px 10px -4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.selecionado {
+    border: #32B72F 5px solid;
 }
 .opcao img {
     max-height: 87px;
+    max-width: 144px;
+    height: auto;
+    width: auto;
+    object-fit: contain;
     margin-bottom: 7px;
+    border-radius: 10px;
 }
 .opcao h3 {
     font-size: 16px;
@@ -80,6 +89,17 @@ body {
 .preco {
     font-size: 16px;
     font-weight: 400;
+}
+.prato-check, .bebida-check, .sobremesa-check {
+    font-size: 22px;
+    color: #32B72F;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+}
+.escondido {
+    display: none;
 }
 
 /* Footer */
@@ -100,7 +120,7 @@ body {
 button {
     all: unset;
 }
-.footer button {
+button {
     background-color: #CBCBCB;
     text-align: center;
     font-size: 20px;
@@ -110,4 +130,77 @@ button {
     width: 100%;
     height: 62px;
     border-radius: 31px;
+}
+.botao-selecionado {
+    background-color: #32B72F;
+    font-weight: 700;
+}
+
+/* Finalização de pedido*/
+
+.transparencia {
+    background-color: #FFFFFFEE;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+}
+.concluir-pedido {
+    width: 90%;
+    height: 350px;
+    background-color: #50D074;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    padding: 25px 20px;
+}
+.descricao-pedido {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.resumo-pedido {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nome-prato,
+.nome-bebida,
+.nome-sobremesa,
+.valor-prato,
+.valor-bebida,
+.valor-sobremesa {
+    font-size: 22px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.concluir-pedido p:first-child,
+.resumo-pedido p {
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.concluir-pedido button {
+    background-color: #FFFFFF;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #50D074;
+    width: 100%;
+    height: 52px;
+    border-radius: 26px;
+}
+.concluir-pedido p:last-child {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
 }

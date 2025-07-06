@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <div class="header">
@@ -20,76 +28,111 @@
             <div class="categoria">
                 <h2>Primeiro, seu prato</h2>
                 <div class="opcoes pratos">
-                    <div class="opcao">
-                        <img src="assets/img/prato-exemplo.png" alt="">
-                        <h3>Título do prato</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet.</p>
-                        <p class="preco">R$ 14,90</p>
+                    <div class="opcao" onclick="pratoSelecionado(this)">
+                        <img src="assets/img/escondidinho-de-frango-interna.jpg" alt="">
+                        <h3>Escondidinho de frango</h3>
+                        <p class="descricao">Acompanha arroz e fritas</p>
+                        <p class="preco">R$ 22,90</p>
+                        <ion-icon class="prato-check escondido" name="checkmark-circle"></ion-icon>
                     </div>
-                    <div class="opcao">
-                        <img src="assets/img/prato-exemplo.png" alt="">
-                        <h3>Título do prato</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet.</p>
-                        <p class="preco">R$ 14,90</p>
+                    <div class="opcao" onclick="pratoSelecionado(this)">
+                        <img src="assets/img/carne-de-panela.png" alt="">
+                        <h3>Carne de panela</h3>
+                        <p class="descricao">Acompanha arroz e feijão</p>
+                        <p class="preco">R$ 25,70</p>
+                        <ion-icon class="prato-check escondido" name="checkmark-circle"></ion-icon>
                     </div>
-                    <div class="opcao">
-                        <img src="assets/img/prato-exemplo.png" alt="">
-                        <h3>Título do prato</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet.</p>
-                        <p class="preco">R$ 14,90</p>
-                    </div>
-                </div>
-            </div>
-            <div class="categoria">
-                <h2>Primeiro, seu prato</h2>
-                <div class="opcoes pratos">
-                    <div class="opcao">
-                        <img src="assets/img/prato-exemplo.png" alt="">
-                        <h3>Título do prato</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet.</p>
-                        <p class="preco">R$ 14,90</p>
-                    </div>
-                    <div class="opcao">
-                        <img src="assets/img/prato-exemplo.png" alt="">
-                        <h3>Título do prato</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet.</p>
-                        <p class="preco">R$ 14,90</p>
-                    </div>
-                    <div class="opcao">
-                        <img src="assets/img/prato-exemplo.png" alt="">
-                        <h3>Título do prato</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet.</p>
-                        <p class="preco">R$ 14,90</p>
+                    <div class="opcao" onclick="pratoSelecionado(this)">
+                        <img src="assets/img/bife-a-cavalo.jpeg" alt="">
+                        <h3>Bife a cavalo</h3>
+                        <p class="descricao">Acompanha arroz, feijão e farofa</p>
+                        <p class="preco">R$ 35,50</p>
+                        <ion-icon class="prato-check escondido" name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
             </div>
             <div class="categoria">
                 <h2>Primeiro, seu prato</h2>
-                <div class="opcoes pratos">
-                    <div class="opcao">
-                        <img src="assets/img/prato-exemplo.png" alt="">
-                        <h3>Título do prato</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet.</p>
-                        <p class="preco">R$ 14,90</p>
+                <div class="opcoes bebidas">
+                    <div class="opcao" onclick="bebidaSelecionada(this)">
+                        <img src="assets/img/coca-lata.png" alt="">
+                        <h3>Coca-Cola lata</h3>
+                        <p class="descricao">350ml</p>
+                        <p class="preco">R$ 8,90</p>
+                         <ion-icon class="bebida-check escondido" name="checkmark-circle"></ion-icon>
                     </div>
-                    <div class="opcao">
-                        <img src="assets/img/prato-exemplo.png" alt="">
-                        <h3>Título do prato</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet.</p>
-                        <p class="preco">R$ 14,90</p>
+                    <div class="opcao" onclick="bebidaSelecionada(this)">
+                        <img src="assets/img/citrus.png" alt="">
+                        <h3>Schweppes Citrus</h3>
+                        <p class="descricao">350ml</p>
+                        <p class="preco">R$ 11,90</p>
+                         <ion-icon class="bebida-check escondido" name="checkmark-circle"></ion-icon>
                     </div>
-                    <div class="opcao">
-                        <img src="assets/img/prato-exemplo.png" alt="">
-                        <h3>Título do prato</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet.</p>
-                        <p class="preco">R$ 14,90</p>
+                    <div class="opcao" onclick="bebidaSelecionada(this)">
+                        <img src="assets/img/heineken-long-neck-330ml.jpg" alt="">
+                        <h3>Heineken</h3>
+                        <p class="descricao">Longneck 330ml</p>
+                        <p class="preco">R$ 12,50</p>
+                        <ion-icon class="bebida-check escondido" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="categoria">
+                <h2>Primeiro, seu prato</h2>
+                <div class="opcoes sobremesas">
+                    <div class="opcao" onclick="sobremesaSelecionada(this)">
+                        <img src="assets/img/milkshake-chocolate.jpg" alt="">
+                        <h3>Milkshake de Chocolate</h3>
+                        <p class="descricao">400ml</p>
+                        <p class="preco">R$ 15,90</p>
+                        <ion-icon class="sobremesa-check escondido" name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div class="opcao" onclick="sobremesaSelecionada(this)">
+                        <img src="assets/img/petit-gateau.jpg" alt="">
+                        <h3>Petit Gateau</h3>
+                        <p class="descricao">Acompanha sorvete</p>
+                        <p class="preco">R$ 16,50</p>
+                        <ion-icon class="sobremesa-check escondido" name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div class="opcao" onclick="sobremesaSelecionada(this)">
+                        <img src="assets/img/crepe-com-sorvete.jpeg" alt="">
+                        <h3>Crepe com sorvete</h3>
+                        <p class="descricao">Doce de leite e sorvete de creme</p>
+                        <p class="preco">R$ 19,90</p>
+                        <ion-icon class="sobremesa-check escondido" name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="footer">
-        <button>Selecione os 3 itens<br> para fechar o pedido</button>
+        <button onclick="finalizaPedido(this)" class="botao">Selecione os 3 itens<br> para fechar o pedido</button>
     </div>
+    <div class="transparencia escondido">
+        <div class="concluir-pedido">
+            <p>Confirme seu pedido</p>
+            <div class="descricao-pedido">
+                <div class="resumo-pedido prato-escolhido">
+                    <p class="nome-prato">nome do prato</p>
+                    <p class="valor-prato">R$</p>
+                </div>
+                <div class="resumo-pedido bebida-escolhida">
+                    <p class="nome-bebida">nome da bebida</p>
+                    <p class="valor-bebida">R$</p>
+                </div>
+                <div class="resumo-pedido sobremesa-escolhida">
+                    <p class="nome-sobremesa">nome da sobremesa</p>
+                    <p class="valor-sobremesa">R$</p>
+                </div>
+                <div class="resumo-pedido total">
+                    <p>TOTAL</p>
+                    <p class="valor-total">R$</p>
+                </div>
+            </div>
+            <button onclick="enviaPedido()">Tudo certo, pode pedir!</button>
+            <p onclick="cancelarPedido()">Cancelar</p>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
   </body>
 </html>
